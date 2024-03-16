@@ -25,7 +25,7 @@ function App() {
         const places=await fetchUserPlaces();
         setUserPlaces(places);
       }
-      catch(eror)
+      catch(error)
       {
         setError({message:error.message||"Failed to fetch user places"});
       }
